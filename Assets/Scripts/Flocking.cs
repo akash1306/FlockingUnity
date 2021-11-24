@@ -89,7 +89,7 @@ public class Flocking : MonoBehaviour
         double u = flock_vector_x * FlockingController.GetComponent<FlockParamLoader>().k1 + FlockingController.GetComponent<FlockParamLoader>().moveForward;
         double v = flock_vector_y * FlockingController.GetComponent<FlockParamLoader>().k2;
         double w = flock_vector_z * FlockingController.GetComponent<FlockParamLoader>().k3;
-        Debug.Log(flock_vector_z );
+        
 
         float headingtemp = UnityEditor.TransformUtils.GetInspectorRotation(gameObject.transform).y;
 
