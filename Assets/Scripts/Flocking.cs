@@ -76,8 +76,9 @@ public class Flocking : MonoBehaviour
                 float inclination = Vector3.Angle(transform.up, itemVector); //Degrees
                 float bearing = Vector3.SignedAngle(transform.forward , new Vector3(itemVector.x, 0, itemVector.z), Vector3.up); //Degrees
                 // Debug.Log("Bearing is "+bearing);
-                prox_vector_x += prox_magnitude * Mathf.Cos(bearing*Mathf.Deg2Rad);// Converted to radians for the Cosine function
-                prox_vector_y += prox_magnitude * Mathf.Sin(bearing*Mathf.Deg2Rad);
+                prox_vector_x += prox_magnitude * Mathf.Cos(bearing*Mathf.Deg2Rad) * Mathf.Sin(inclination*Mathf.Deg2Rad);// Converted to radians for the Cosine function
+                prox_vector_y += prox_magnitude * Mathf.Sin(bearing*Mathf.Deg2Rad) * Mathf.Sin(inclination*Mathf.Deg2Rad);
+                prox_vector_z += prox_magnitude * Mathf.Cos(inclination*Mathf.Deg2Rad);
                 
             }
         }
@@ -88,13 +89,13 @@ public class Flocking : MonoBehaviour
         double u = flock_vector_x * FlockingController.GetComponent<FlockParamLoader>().k1 + FlockingController.GetComponent<FlockParamLoader>().moveForward;
         double v = flock_vector_y * FlockingController.GetComponent<FlockParamLoader>().k2;
         double w = flock_vector_z * FlockingController.GetComponent<FlockParamLoader>().k3;
-        Debug.Log("v is " + v );
+        Debug.Log(flock_vector_z );
 
         float headingtemp = UnityEditor.TransformUtils.GetInspectorRotation(gameObject.transform).y;
 
         moveCommand.z = transform.position.z + (float)u * Mathf.Cos(headingtemp * Mathf.Deg2Rad);// Converted to radians for the Cosine function
         moveCommand.x = transform.position.x + (float)u * Mathf.Sin(headingtemp * Mathf.Deg2Rad);
-        moveCommand.y = transform.position.y;
+        moveCommand.y = transform.position.y+ (float)w;
 
         //headingtemp += (float)v*Mathf.Rad2Deg;
         // Debug.Log(moveCommand);
