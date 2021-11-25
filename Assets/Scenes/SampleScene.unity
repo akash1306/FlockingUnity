@@ -250,8 +250,8 @@ GameObject:
   - component: {fileID: 37942397}
   - component: {fileID: 37942396}
   m_Layer: 0
-  m_Name: Vehicle_4 (1)
-  m_TagString: Untagged
+  m_Name: Vehicle_9
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -285,6 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &37942398
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -436,8 +437,8 @@ GameObject:
   - component: {fileID: 52570242}
   - component: {fileID: 52570241}
   m_Layer: 0
-  m_Name: Vehicle_1 (3)
-  m_TagString: Untagged
+  m_Name: Vehicle_16
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -471,6 +472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &52570243
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -512,8 +514,8 @@ GameObject:
   - component: {fileID: 70598245}
   - component: {fileID: 70598244}
   m_Layer: 0
-  m_Name: Vehicle_4 (4)
-  m_TagString: Untagged
+  m_Name: Vehicle_24
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -547,6 +549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &70598246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -588,8 +591,8 @@ GameObject:
   - component: {fileID: 120276103}
   - component: {fileID: 120276102}
   m_Layer: 0
-  m_Name: Vehicle_1 (4)
-  m_TagString: Untagged
+  m_Name: Vehicle_21
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -623,6 +626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &120276104
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -780,8 +784,8 @@ GameObject:
   - component: {fileID: 190004496}
   - component: {fileID: 190004495}
   m_Layer: 0
-  m_Name: Vehicle_4 (2)
-  m_TagString: Untagged
+  m_Name: Vehicle_14
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -815,6 +819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &190004497
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -862,8 +867,8 @@ GameObject:
   - component: {fileID: 236721737}
   - component: {fileID: 236721736}
   m_Layer: 0
-  m_Name: Vehicle_5 (1)
-  m_TagString: Untagged
+  m_Name: Vehicle_10
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -897,6 +902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &236721738
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1051,9 +1057,10 @@ GameObject:
   m_Component:
   - component: {fileID: 346034467}
   - component: {fileID: 346034468}
+  - component: {fileID: 346034469}
   m_Layer: 0
   m_Name: FlockController
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1097,6 +1104,22 @@ MonoBehaviour:
   interpolateCoeff: 0.95
   noise: 0
   maxRange: 0
+--- !u!114 &346034469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346034466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e6a783a4f03d41abbcd31e56d134d23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headingSumCos: 0
+  headingSumSin: 0
+  timeData: 0
+  psiMetric: 0
 --- !u!1 &380676627
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,8 +1133,8 @@ GameObject:
   - component: {fileID: 380676629}
   - component: {fileID: 380676628}
   m_Layer: 0
-  m_Name: Vehicle_1 (7)
-  m_TagString: Untagged
+  m_Name: Vehicle_26
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1145,6 +1168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &380676630
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1192,8 +1216,8 @@ GameObject:
   - component: {fileID: 396852042}
   - component: {fileID: 396852041}
   m_Layer: 0
-  m_Name: Vehicle_3 (1)
-  m_TagString: Untagged
+  m_Name: Vehicle_8
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1227,6 +1251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &396852043
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1378,8 +1403,8 @@ GameObject:
   - component: {fileID: 478592455}
   - component: {fileID: 478592454}
   m_Layer: 0
-  m_Name: Vehicle_2 (1)
-  m_TagString: Untagged
+  m_Name: Vehicle_7
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1413,6 +1438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &478592456
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1662,8 +1688,8 @@ GameObject:
   - component: {fileID: 488796273}
   - component: {fileID: 488796272}
   m_Layer: 0
-  m_Name: Vehicle_2 (4)
-  m_TagString: Untagged
+  m_Name: Vehicle_22
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1697,6 +1723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &488796274
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2172,8 +2199,8 @@ GameObject:
   - component: {fileID: 611909126}
   - component: {fileID: 611909125}
   m_Layer: 0
-  m_Name: Vehicle_3 (4)
-  m_TagString: Untagged
+  m_Name: Vehicle_23
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2207,6 +2234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &611909127
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2359,7 +2387,7 @@ GameObject:
   - component: {fileID: 669740110}
   m_Layer: 0
   m_Name: Vehicle_4
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2405,6 +2433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!54 &669740110
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2544,8 +2573,8 @@ GameObject:
   - component: {fileID: 732606391}
   - component: {fileID: 732606390}
   m_Layer: 0
-  m_Name: Vehicle_5 (4)
-  m_TagString: Untagged
+  m_Name: Vehicle_30
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2579,6 +2608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &732606392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2620,8 +2650,8 @@ GameObject:
   - component: {fileID: 827935282}
   - component: {fileID: 827935281}
   m_Layer: 0
-  m_Name: Vehicle_5 (5)
-  m_TagString: Untagged
+  m_Name: Vehicle_25
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2655,6 +2685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &827935283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2979,13 +3010,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.17364816, y: -0, z: -0, w: 0.9848078}
-  m_LocalPosition: {x: 586.54, y: 219.12, z: 586.06}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.2164396, y: -0, z: -0, w: 0.97629607}
+  m_LocalPosition: {x: 0, y: 17.870972, z: 0}
+  m_LocalScale: {x: 0.22222224, y: 0.47771493, z: 0.2789088}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1009892227}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 25, y: 0, z: 0}
 --- !u!1 &963334376
 GameObject:
   m_ObjectHideFlags: 0
@@ -2999,8 +3030,8 @@ GameObject:
   - component: {fileID: 963334378}
   - component: {fileID: 963334377}
   m_Layer: 0
-  m_Name: Vehicle_3 (7)
-  m_TagString: Untagged
+  m_Name: Vehicle_33
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3034,6 +3065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &963334379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3075,8 +3107,8 @@ GameObject:
   - component: {fileID: 967330628}
   - component: {fileID: 967330627}
   m_Layer: 0
-  m_Name: Vehicle_2 (5)
-  m_TagString: Untagged
+  m_Name: Vehicle_27
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3110,6 +3142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &967330629
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3151,8 +3184,8 @@ GameObject:
   - component: {fileID: 984605326}
   - component: {fileID: 984605325}
   m_Layer: 0
-  m_Name: Vehicle_5 (3)
-  m_TagString: Untagged
+  m_Name: Vehicle_15
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3186,6 +3219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &984605327
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3234,7 +3268,7 @@ GameObject:
   - component: {fileID: 1009892229}
   m_Layer: 0
   m_Name: Vehicle_5
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3264,6 +3298,7 @@ Transform:
   m_LocalScale: {x: 4.5, y: 1.6787, z: 4}
   m_Children:
   - {fileID: 46076898}
+  - {fileID: 963194228}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3280,6 +3315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!54 &1009892229
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3310,7 +3346,7 @@ GameObject:
   - component: {fileID: 1028463072}
   m_Layer: 0
   m_Name: Vehicle_1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3356,6 +3392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!54 &1028463072
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3386,7 +3423,7 @@ GameObject:
   - component: {fileID: 1044102514}
   m_Layer: 0
   m_Name: Vehicle_3
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3432,6 +3469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!54 &1044102514
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3565,8 +3603,8 @@ GameObject:
   - component: {fileID: 1095501983}
   - component: {fileID: 1095501982}
   m_Layer: 0
-  m_Name: Vehicle_4 (6)
-  m_TagString: Untagged
+  m_Name: Vehicle_39
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3600,6 +3638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &1095501984
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4063,8 +4102,8 @@ GameObject:
   - component: {fileID: 1148486819}
   - component: {fileID: 1148486818}
   m_Layer: 0
-  m_Name: Vehicle_1 (2)
-  m_TagString: Untagged
+  m_Name: Vehicle_11
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4098,6 +4137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &1148486820
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4353,8 +4393,8 @@ GameObject:
   - component: {fileID: 1201871088}
   - component: {fileID: 1201871087}
   m_Layer: 0
-  m_Name: Vehicle_3 (6)
-  m_TagString: Untagged
+  m_Name: Vehicle_28
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4388,6 +4428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &1201871089
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4869,8 +4910,8 @@ GameObject:
   - component: {fileID: 1348549962}
   - component: {fileID: 1348549961}
   m_Layer: 0
-  m_Name: Vehicle_3 (5)
-  m_TagString: Untagged
+  m_Name: Vehicle_38
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4904,6 +4945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &1348549963
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5061,8 +5103,8 @@ GameObject:
   - component: {fileID: 1404990162}
   - component: {fileID: 1404990161}
   m_Layer: 0
-  m_Name: Vehicle_2 (6)
-  m_TagString: Untagged
+  m_Name: Vehicle_32
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5096,6 +5138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &1404990163
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5241,8 +5284,8 @@ GameObject:
   - component: {fileID: 1452364202}
   - component: {fileID: 1452364201}
   m_Layer: 0
-  m_Name: Vehicle_3 (2)
-  m_TagString: Untagged
+  m_Name: Vehicle_13
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5276,6 +5319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &1452364203
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5427,8 +5471,8 @@ GameObject:
   - component: {fileID: 1488840913}
   - component: {fileID: 1488840912}
   m_Layer: 0
-  m_Name: Vehicle_5 (2)
-  m_TagString: Untagged
+  m_Name: Vehicle_20
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5462,6 +5506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &1488840914
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5503,8 +5548,8 @@ GameObject:
   - component: {fileID: 1521860287}
   - component: {fileID: 1521860286}
   m_Layer: 0
-  m_Name: Vehicle_3 (3)
-  m_TagString: Untagged
+  m_Name: Vehicle_18
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5538,6 +5583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &1521860288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5683,8 +5729,8 @@ GameObject:
   - component: {fileID: 1552625206}
   - component: {fileID: 1552625205}
   m_Layer: 0
-  m_Name: Vehicle_2 (3)
-  m_TagString: Untagged
+  m_Name: Vehicle_12
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5718,6 +5764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &1552625207
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5862,6 +5909,68 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 493799065}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1617236476
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1736945907249484, guid: 44eacb5f811a5b243a9bf963a0151a66, type: 3}
+      propertyPath: m_Name
+      value: UPyPlotController
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847618919011884, guid: 44eacb5f811a5b243a9bf963a0151a66, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847618919011884, guid: 44eacb5f811a5b243a9bf963a0151a66, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 635.42896
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847618919011884, guid: 44eacb5f811a5b243a9bf963a0151a66, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 383.18204
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847618919011884, guid: 44eacb5f811a5b243a9bf963a0151a66, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 585.0699
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847618919011884, guid: 44eacb5f811a5b243a9bf963a0151a66, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847618919011884, guid: 44eacb5f811a5b243a9bf963a0151a66, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847618919011884, guid: 44eacb5f811a5b243a9bf963a0151a66, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847618919011884, guid: 44eacb5f811a5b243a9bf963a0151a66, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847618919011884, guid: 44eacb5f811a5b243a9bf963a0151a66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847618919011884, guid: 44eacb5f811a5b243a9bf963a0151a66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847618919011884, guid: 44eacb5f811a5b243a9bf963a0151a66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114487704176967620, guid: 44eacb5f811a5b243a9bf963a0151a66,
+        type: 3}
+      propertyPath: maxSamples
+      value: 25000000
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 44eacb5f811a5b243a9bf963a0151a66, type: 3}
 --- !u!1001 &1659183169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6089,11 +6198,11 @@ GameObject:
   - component: {fileID: 1683591639}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!154 &1683591639
 TerrainCollider:
   m_ObjectHideFlags: 0
@@ -6102,7 +6211,7 @@ TerrainCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683591638}
   m_Material: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_TerrainData: {fileID: 15600000, guid: 7ca13af0747858b4e97f697cc63d4fe5, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1683591640
@@ -6171,8 +6280,8 @@ GameObject:
   - component: {fileID: 1709917940}
   - component: {fileID: 1709917939}
   m_Layer: 0
-  m_Name: Vehicle_5 (7)
-  m_TagString: Untagged
+  m_Name: Vehicle_40
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6206,6 +6315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &1709917941
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6247,8 +6357,8 @@ GameObject:
   - component: {fileID: 1713663518}
   - component: {fileID: 1713663517}
   m_Layer: 0
-  m_Name: Vehicle_1 (1)
-  m_TagString: Untagged
+  m_Name: Vehicle_6
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6282,6 +6392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &1713663519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6427,8 +6538,8 @@ GameObject:
   - component: {fileID: 1750266152}
   - component: {fileID: 1750266151}
   m_Layer: 0
-  m_Name: Vehicle_2 (7)
-  m_TagString: Untagged
+  m_Name: Vehicle_37
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6462,6 +6573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &1750266153
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6613,8 +6725,8 @@ GameObject:
   - component: {fileID: 1765994161}
   - component: {fileID: 1765994160}
   m_Layer: 0
-  m_Name: Vehicle_5 (6)
-  m_TagString: Untagged
+  m_Name: Vehicle_35
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6648,6 +6760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &1765994162
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6695,8 +6808,8 @@ GameObject:
   - component: {fileID: 1779808828}
   - component: {fileID: 1779808827}
   m_Layer: 0
-  m_Name: Vehicle_1 (6)
-  m_TagString: Untagged
+  m_Name: Vehicle_31
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6730,6 +6843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &1779808829
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6771,8 +6885,8 @@ GameObject:
   - component: {fileID: 1792888850}
   - component: {fileID: 1792888849}
   m_Layer: 0
-  m_Name: Vehicle_1 (5)
-  m_TagString: Untagged
+  m_Name: Vehicle_36
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6806,6 +6920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &1792888851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6854,7 +6969,7 @@ GameObject:
   - component: {fileID: 1849463353}
   m_Layer: 0
   m_Name: Vehicle_2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6900,6 +7015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!54 &1849463353
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7033,8 +7149,8 @@ GameObject:
   - component: {fileID: 1881976011}
   - component: {fileID: 1881976010}
   m_Layer: 0
-  m_Name: Vehicle_2 (2)
-  m_TagString: Untagged
+  m_Name: Vehicle_17
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7068,6 +7184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &1881976012
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7225,8 +7342,8 @@ GameObject:
   - component: {fileID: 1907738843}
   - component: {fileID: 1907738842}
   m_Layer: 0
-  m_Name: Vehicle_4 (3)
-  m_TagString: Untagged
+  m_Name: Vehicle_19
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7260,6 +7377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &1907738844
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7619,8 +7737,8 @@ GameObject:
   - component: {fileID: 2040775512}
   - component: {fileID: 2040775511}
   m_Layer: 0
-  m_Name: Vehicle_4 (5)
-  m_TagString: Untagged
+  m_Name: Vehicle_29
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7654,6 +7772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &2040775513
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7695,8 +7814,8 @@ GameObject:
   - component: {fileID: 2062183347}
   - component: {fileID: 2062183346}
   m_Layer: 0
-  m_Name: Vehicle_4 (7)
-  m_TagString: Untagged
+  m_Name: Vehicle_34
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7730,6 +7849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlockingController: {fileID: 346034466}
+  headingToSend: 0
 --- !u!65 &2062183348
 BoxCollider:
   m_ObjectHideFlags: 0

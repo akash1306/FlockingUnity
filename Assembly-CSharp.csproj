@@ -98,7 +98,10 @@
      <Compile Include="Assets\Scripts\FlockingAlgo\Flock.cs" />
      <Compile Include="Assets\Scripts\FlockingAlgo\FlockAgent.cs" />
      <Compile Include="Assets\Scripts\FlockingAlgo\FlockBehavior.cs" />
+     <Compile Include="Assets\Scripts\MetricMeasure.cs" />
      <Compile Include="Assets\Scripts\MovementController.cs" />
+     <Compile Include="Assets\UPyPlot\Scripts\UPyPlotController.cs" />
+     <Compile Include="Assets\UPyPlot\Scripts\UPyPlotExampleSender.cs" />
      <None Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Shaders\Tonemapper.shader" />
      <None Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Shaders\GlobalFog.shader" />
      <None Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Shaders\VortexEffect.shader" />
@@ -139,6 +142,7 @@
      <None Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
      <None Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\UPyPlot\plotting_cache\plot.txt" />
      <None Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
      <None Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
      <None Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />

@@ -7,6 +7,7 @@ public class Flocking : MonoBehaviour
 
 
     public GameObject FlockingController;
+    public float headingToSend;
 
     // Start is called before the first frame update
     void Start()
@@ -70,7 +71,7 @@ public class Flocking : MonoBehaviour
 
 
                 prox_magnitude = getProximalMagnitude(Vector3.Distance(item.position, transform.position));
-                Debug.Log("Distance is "+Vector3.Distance(item.position, transform.position));
+                //Debug.Log("Distance is "+Vector3.Distance(item.position, transform.position));
                // Debug.Log("ProxMag is"+prox_magnitude);
                 Vector3 itemVector = item.position - transform.position;
                 float inclination = Vector3.Angle(transform.up, itemVector); //Degrees
@@ -92,6 +93,7 @@ public class Flocking : MonoBehaviour
         
 
         float headingtemp = UnityEditor.TransformUtils.GetInspectorRotation(gameObject.transform).y;
+        headingToSend = headingtemp;
 
         moveCommand.z = transform.position.z + (float)u * Mathf.Cos(headingtemp * Mathf.Deg2Rad);// Converted to radians for the Cosine function
         moveCommand.x = transform.position.x + (float)u * Mathf.Sin(headingtemp * Mathf.Deg2Rad);
